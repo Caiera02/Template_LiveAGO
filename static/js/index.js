@@ -126,7 +126,7 @@ window.buscarEExibir = function() {
         // Envia o log para o seu backend
         enviarLogAcesso(logData);
         setTimeout(() => {
-              window.location.href = 'goldcooper.html';
+              window.location.href = 'live2.html';
         }, 500); // Pequeno atraso de 500ms para o usuário ver a mensagem de sucesso
          // -------------------------
 
@@ -140,3 +140,4 @@ window.buscarEExibir = function() {
 // CHAMA A FUNÇÃO DE CARREGAMENTO AO INICIAR O SCRIPT
 // ===============================================
 carregarDados();
+
