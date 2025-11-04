@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificação de Cooperados | Dinâmico</title>
-    <link rel="stylesheet" href=" satic/css/index.css ">
+    <link rel="stylesheet" href="static/css/index.css">
     
 </head>
 
@@ -25,25 +23,22 @@
 
     <div class="container">
         <h2>Seja-Bem Vindo AGO 2025🧑‍🤝‍🧑</h2>
-        <form method="post">
-            {% csrf_token %}
+       
+            
             <label for="inputNome">Nome:</label>
-            {{login_form.username}}
-            {% comment %} <input type="text" id="username" placeholder="Digite o nome completo"> {% endcomment %}
+            <input type="text" id="inputNome" placeholder="Digite o nome completo"> 
             
             <label for="inputMatricula">Matrícula:</label>
-            <input type="text" name="matricula" id="id_matricula" required>
-            {% comment %} <input type="number" id="inputMatricula" placeholder="Digite a matrícula (Ex: 1003)"> {% endcomment %}
-                
-            {% comment %} <button type="submit">Entrar</button> {% endcomment %}
-            <input type="submit" value="Login">
-        </form>
+            <input type="number" id="inputMatricula" placeholder="Digite a matrícula (Ex: 1003)"> 
+            
+            <button type="submit" onclick="buscarEExibir(event)">Entrar</button> 
+            
+      
 
-        {% comment %} <div id="resultado" class="aviso">Aguardando busca...</div> {% endcomment %}
+       <div id="resultado" class="aviso">Aguardando busca...</div> 
     </div>
 
-    {% comment %} <script src="assests/js/index.js"></script> {% endcomment %}
+   <script src="static/js/index.js"></script> 
 </body>
 
 </html>
-
