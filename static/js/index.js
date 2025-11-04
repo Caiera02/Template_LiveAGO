@@ -80,7 +80,7 @@ window.buscarEExibir = function() {
         // --- REDIRECIONAMENTO ---
         // A função window.location.href redireciona o navegador para a URL especificada.
         setTimeout(() => {
-             window.location.href = 'live.html';
+             window.location.href = 'live2.html';
         }, 500); // Pequeno atraso de 500ms para o usuário ver a mensagem de sucesso
         // -------------------------
 
@@ -93,4 +93,5 @@ window.buscarEExibir = function() {
 // ===============================================
 // CHAMA A FUNÇÃO DE CARREGAMENTO AO INICIAR O SCRIPT
 // ===============================================
+
 carregarDados();
