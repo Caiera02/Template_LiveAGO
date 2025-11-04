@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGO 2025 - Live Privada</title>
+    <!-- Carrega o Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-green': '#28b450', // Verde esmeralda forte
+                        'secondary-green': '#059669', // Verde mais escuro
+                        'bg-light-green': '#ECFDF5', // Verde muito claro para o fundo
+                        'text-dark': '#1F2937', // Cinza escuro
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para garantir a proporção do iframe */
+        .video-responsive {
+            position: relative;
+            width: 100%;
+            /* 16:9 Aspect Ratio */
+            padding-top: 56.25%; 
+        }
+
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+        
+        /* Ajuste do iframe de chat para ser responsivo */
+        .chat iframe {
+            width: 100%;
+            height: 500px; /* Altura fixa ou responsiva para o chat */
+        }
+
+        /* Estilo base para garantir que o corpo ocupe toda a altura */
+        body {
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            background-color: #ECFDF5; /* Fundo verde muito claro */
+        }
+    </style>
+</head>
+<body class="bg-bg-light-green text-text-dark antialiased p-4 sm:p-8">
+
+    <!-- Título Principal -->
+    <header class="text-center mb-10 mt-2">
+        <h1 class="text-5xl sm:text-7xl font-extrabold text-primary-green tracking-tight transition duration-300 transform hover:scale-105">
+            AGO 2025
+        </h1>
+        <p class="text-lg sm:text-xl text-secondary-green font-medium mt-1">
+            Transmissão de Live Privada
+        </p>
+    </header>
+
+    <!-- Conteúdo Principal - Layout Flex/Grid Responsivo -->
+    <div class="container mx-auto max-w-7xl">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Coluna do Vídeo e Descrição (2/3 da largura em telas grandes) -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <!-- Container do Vídeo Responsivo -->
+                <div class="bg-white p-4 shadow-2xl rounded-xl ring-2 ring-primary-green/50">
+                    <div class="video-container video-responsive">
+                        <!-- IFRAME do Vídeo (Atenção: 'allow' está aqui, mas o 'allow' de cima foi removido do seu HTML original) -->
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/MoGaTcFulys?si=N00WNS2om4mnA4YY&controls=0&autoplay=1&mute=1"
+                            title="YouTube video player" 
+                            frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- Coluna do Chat (1/3 da largura em telas grandes) -->
+            <div class="lg:col-span-1">
+                <div class="chat bg-white p-4 shadow-2xl rounded-xl ring-2 ring-primary-green/50">
+                    <h2 class="text-xl font-bold mb-3 text-secondary-green border-b pb-2 border-gray-200">Chat Ao Vivo</h2>
+                    <!-- IFRAME do Chat -->
+                    <iframe 
+                        src="https://deadsimplechat.com/Mv5dZJmrd" 
+                        frameborder="0"
+                        class="rounded-lg"
+                        style="min-height: 400px; height: 70vh;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

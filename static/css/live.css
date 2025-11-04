@@ -1,0 +1,77 @@
+:root {
+    /* Cor principal: #28b450 */
+    --cor-principal: #28b450;
+    --cor-principal-hover: #1f8d3d;
+    --cor-fundo-card: rgba(255, 255, 255, 0.95);
+    --sombra-card: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --sombra-botao: 0 4px 6px rgba(40, 180, 80, 0.4);
+}
+
+/*
+========================================
+VIDEO
+========================================
+*/
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr  1fr;
+    gap: 60px;
+}
+
+/* .video-container {
+    /* Largura do seu iframe *
+    width: 760px;
+    /* Altura de visualização FINAL (415px - 45px de recorte = 370px) *
+    height: 370px;
+    overflow: hidden;
+    /* Oculta o que transborda da div 
+    position: relative;
+    background-color: black;
+} */
+
+.video-container {
+    /* Largura será 100% do 1fr da grade em desktop */
+    width: 100%;
+    height: 370px;
+    /* Altura de visualização FINAL */
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    border-radius: 0.75rem;
+}
+.video-container iframe {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    /* Garante que o iframe cubra a área de visualização e o recorte */
+    width: 100%;
+    height: calc(100% + 48px);
+
+}
+
+
+/* Garantir que o container se ajuste em mobile */
+@media (max-width: 1024px) {
+    .video-container {
+        width: 100%;
+    }
+} 
+
+
+/* 
+================================
+            CHAT
+================================
+*/
+
+.chat {
+    /* No seu CSS original, a altura era 50%. Mantenho uma altura decente aqui. */
+    width: 100%;
+    height: 500px;
+}
+
+.chat iframe {
+    width: 100%;
+    height: 100%;
+}

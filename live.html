@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/live.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // NOVO VERDE DO USUÁRIO
+                        'primary-green': '#28b450',
+                        'secondary-green': '#1f8d3d', // Cor mais escura para títulos (baseado no hover do seu CSS)
+                        'bg-light-green': '#ECFDF5', // Fundo verde muito claro
+                        'text-dark': '#1F2937', // Cinza escuro
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <title>AGO 2025-Atesa</title>
+</head>
+
+<body class="bg-bg-light-green text-text-dark antialiased p-4 sm:p-8">
+    <header class="text-center mb-10 mt-2">
+        <h1
+            class="text-5xl sm:text-7xl font-extrabold text-primary-green tracking-tight transition duration-300 transform hover:scale-95">
+            AGO 2025
+        </h1>
+        <!-- <p class="text-lg sm:text-xl text-secondary-green font-medium mt-1">
+            Transmissão de Live Privada
+        </p> -->
+    </header>
+
+    <!-- Conteúdo Principal - Layout Flex/Grid Responsivo -->
+   
+        <div class="container">
+            <!-- Coluna do Vídeo e Descrição (2/3 da largura em telas grandes) -->
+            <div >
+                <!-- Container do Vídeo Responsivo -->
+                <div class="bg-white p-4 shadow-2xl rounded-xl ring-2 ring-primary-green/50">
+                    <div class="video-container video-responsive">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/MoGaTcFulys?si=N00WNS2om4mnA4YY&controls=0&autoplay=1&mute=1"
+                            title="YouTube video player" 
+                            frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna do Chat (1/3 da largura em telas grandes) -->
+            <div >
+                <div>
+                    <h2 class="text-xl font-bold mb-3 text-secondary-green border-b pb-2 border-gray-200">Chat Ao Vivo
+                    </h2>
+                    <!-- IFRAME do Chat -->
+                    <iframe src="https://deadsimplechat.com/Mv5dZJmrd" frameborder="0" class="rounded-lg"
+                        style=" width: 400px ; height: 60vh;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    
+
+</body>
+
+</html>
