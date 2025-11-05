@@ -1,7 +1,7 @@
 // URL do nosso arquivo JSON (deve estar no mesmo diretório)
 const URL_DADOS = './cooperados.json';
 // const URL_DADOS = './goldcooper.json';
-const URL_LOG_ACESSO = 'http://127.0.0.1:8000/api/log_acesso/';
+const URL_LOG_ACESSO = 'https://caio12faculdade.pythonanywhere.com//api/log_acesso/';
 // Variável global para armazenar os dados carregados
 let listaCooperados = [];
 const resultadoDiv = document.getElementById('resultado');
@@ -140,4 +140,5 @@ window.buscarEExibir = function() {
 // CHAMA A FUNÇÃO DE CARREGAMENTO AO INICIAR O SCRIPT
 // ===============================================
 carregarDados();
+
 
