@@ -124,10 +124,10 @@ window.buscarEExibir = function() {
 
         // 2. Rastreio de Login (GOAL 2)
         // Envia o log para o seu backend
-        enviarLogAcesso(logData);
-        setTimeout(() => {
-              window.location.href = 'goldcooper.html';
-        }, 500); // Pequeno atraso de 500ms para o usuário ver a mensagem de sucesso
+        //enviarLogAcesso(logData);
+        //setTimeout(() => {
+       //       window.location.href = 'goldcooper.html';
+        //}, 500); // Pequeno atraso de 500ms para o usuário ver a mensagem de sucesso
          // -------------------------
 
     } else {
@@ -140,6 +140,7 @@ window.buscarEExibir = function() {
 // CHAMA A FUNÇÃO DE CARREGAMENTO AO INICIAR O SCRIPT
 // ===============================================
 carregarDados();
+
 
 
 
